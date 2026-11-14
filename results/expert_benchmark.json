@@ -1,0 +1,293 @@
+{
+  "track": "abyss",
+  "seeds": [
+    105000,
+    105001,
+    105002,
+    105003,
+    105004
+  ],
+  "best": "team2",
+  "results": {
+    "team1": {
+      "episodes": [
+        {
+          "seed": 105000,
+          "finished": false,
+          "lap_steps": null,
+          "progress": 0.8174884417178009,
+          "return": -46.83126220703148,
+          "steps": 1500,
+          "score": 0.8174884417178009
+        },
+        {
+          "seed": 105001,
+          "finished": false,
+          "lap_steps": null,
+          "progress": 0.8174357260075327,
+          "return": -46.83791503906269,
+          "steps": 1500,
+          "score": 0.8174357260075327
+        },
+        {
+          "seed": 105002,
+          "finished": true,
+          "lap_steps": 570,
+          "progress": 1.0,
+          "return": 79.26992187500002,
+          "steps": 570,
+          "score": 1.62
+        },
+        {
+          "seed": 105003,
+          "finished": true,
+          "lap_steps": 570,
+          "progress": 1.0,
+          "return": 79.26992187500002,
+          "steps": 570,
+          "score": 1.62
+        },
+        {
+          "seed": 105004,
+          "finished": false,
+          "lap_steps": null,
+          "progress": 0.07171934900643945,
+          "return": -140.9488693237293,
+          "steps": 1500,
+          "score": 0.07171934900643945
+        }
+      ],
+      "score": 0.9893287033463547,
+      "finish_rate": 0.4,
+      "lap_steps_finished": 570.0,
+      "lap_steps_censored": 1128.0,
+      "progress": 0.7413287033463546,
+      "return": -15.215640563964683,
+      "errors": 3578
+    },
+    "team2": {
+      "episodes": [
+        {
+          "seed": 105000,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.82730712890647,
+          "steps": 585,
+          "score": 1.6099999999999999
+        },
+        {
+          "seed": 105001,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.82730712890647,
+          "steps": 585,
+          "score": 1.6099999999999999
+        },
+        {
+          "seed": 105002,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.82730712890647,
+          "steps": 585,
+          "score": 1.6099999999999999
+        },
+        {
+          "seed": 105003,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.82730712890647,
+          "steps": 585,
+          "score": 1.6099999999999999
+        },
+        {
+          "seed": 105004,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.82730712890647,
+          "steps": 585,
+          "score": 1.6099999999999999
+        }
+      ],
+      "score": 1.6099999999999999,
+      "finish_rate": 1.0,
+      "lap_steps_finished": 585.0,
+      "lap_steps_censored": 585.0,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "errors": 0
+    },
+    "team3": {
+      "episodes": [
+        {
+          "seed": 105000,
+          "finished": true,
+          "lap_steps": 604,
+          "progress": 1.0,
+          "return": 75.89208984375009,
+          "steps": 604,
+          "score": 1.5973333333333333
+        },
+        {
+          "seed": 105001,
+          "finished": true,
+          "lap_steps": 604,
+          "progress": 1.0,
+          "return": 75.89208984375009,
+          "steps": 604,
+          "score": 1.5973333333333333
+        },
+        {
+          "seed": 105002,
+          "finished": true,
+          "lap_steps": 604,
+          "progress": 1.0,
+          "return": 75.89208984375009,
+          "steps": 604,
+          "score": 1.5973333333333333
+        },
+        {
+          "seed": 105003,
+          "finished": true,
+          "lap_steps": 604,
+          "progress": 1.0,
+          "return": 75.89208984375009,
+          "steps": 604,
+          "score": 1.5973333333333333
+        },
+        {
+          "seed": 105004,
+          "finished": true,
+          "lap_steps": 604,
+          "progress": 1.0,
+          "return": 75.89208984375009,
+          "steps": 604,
+          "score": 1.5973333333333333
+        }
+      ],
+      "score": 1.5973333333333333,
+      "finish_rate": 1.0,
+      "lap_steps_finished": 604.0,
+      "lap_steps_censored": 604.0,
+      "progress": 1.0,
+      "return": 75.89208984375009,
+      "errors": 0
+    },
+    "team4": {
+      "episodes": [
+        {
+          "seed": 105000,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.78911132812514,
+          "steps": 585,
+          "score": 1.6099999999999999
+        },
+        {
+          "seed": 105001,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.78911132812514,
+          "steps": 585,
+          "score": 1.6099999999999999
+        },
+        {
+          "seed": 105002,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.78911132812514,
+          "steps": 585,
+          "score": 1.6099999999999999
+        },
+        {
+          "seed": 105003,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.78911132812514,
+          "steps": 585,
+          "score": 1.6099999999999999
+        },
+        {
+          "seed": 105004,
+          "finished": true,
+          "lap_steps": 585,
+          "progress": 1.0,
+          "return": 77.78911132812514,
+          "steps": 585,
+          "score": 1.6099999999999999
+        }
+      ],
+      "score": 1.6099999999999999,
+      "finish_rate": 1.0,
+      "lap_steps_finished": 585.0,
+      "lap_steps_censored": 585.0,
+      "progress": 1.0,
+      "return": 77.78911132812514,
+      "errors": 0
+    },
+    "team5": {
+      "episodes": [
+        {
+          "seed": 105000,
+          "finished": true,
+          "lap_steps": 590,
+          "progress": 1.0,
+          "return": 77.2776367187502,
+          "steps": 590,
+          "score": 1.6066666666666667
+        },
+        {
+          "seed": 105001,
+          "finished": true,
+          "lap_steps": 590,
+          "progress": 1.0,
+          "return": 77.2776367187502,
+          "steps": 590,
+          "score": 1.6066666666666667
+        },
+        {
+          "seed": 105002,
+          "finished": true,
+          "lap_steps": 590,
+          "progress": 1.0,
+          "return": 77.2776367187502,
+          "steps": 590,
+          "score": 1.6066666666666667
+        },
+        {
+          "seed": 105003,
+          "finished": true,
+          "lap_steps": 590,
+          "progress": 1.0,
+          "return": 77.2776367187502,
+          "steps": 590,
+          "score": 1.6066666666666667
+        },
+        {
+          "seed": 105004,
+          "finished": true,
+          "lap_steps": 590,
+          "progress": 1.0,
+          "return": 77.2776367187502,
+          "steps": 590,
+          "score": 1.6066666666666667
+        }
+      ],
+      "score": 1.6066666666666667,
+      "finish_rate": 1.0,
+      "lap_steps_finished": 590.0,
+      "lap_steps_censored": 590.0,
+      "progress": 1.0,
+      "return": 77.2776367187502,
+      "errors": 0
+    }
+  }
+}

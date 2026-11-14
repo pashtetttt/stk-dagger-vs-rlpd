@@ -1,0 +1,133 @@
+{
+  "algo": "dagger",
+  "seed": 4,
+  "versions": {
+    "python": "3.12.16",
+    "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.4",
+    "gymnasium": "1.4.0",
+    "pysupertuxkart2": "0.7.4",
+    "scipy": "1.18.1"
+  },
+  "pystk_src": "../pystk_project/src",
+  "output_dir": ".",
+  "env": {
+    "backend": "stk",
+    "track": "abyss",
+    "laps": 1,
+    "max_steps": 1500,
+    "render": false,
+    "step_dt": 0.1,
+    "allow_fire": false,
+    "auto_rescue": {
+      "enabled": true,
+      "warmup_steps": 60,
+      "speed_threshold": 1.0,
+      "patience": 30
+    }
+  },
+  "features": {
+    "n_paths": 6,
+    "n_items": 4
+  },
+  "action_keys": [
+    "steer",
+    "acceleration",
+    "brake",
+    "drift",
+    "nitro"
+  ],
+  "expert": {
+    "name": "best",
+    "candidates": [
+      "team1",
+      "team2",
+      "team3",
+      "team4",
+      "team5"
+    ],
+    "path_lookahead": 3,
+    "benchmark_episodes": 5
+  },
+  "dataset": {
+    "n_episodes": 20,
+    "noisy_fraction": 0.5,
+    "noise_steer_std": 0.2,
+    "noise_accel_std": 0.1,
+    "noise_binary_flip": 0.05,
+    "seed": 12345
+  },
+  "network": {
+    "hidden": [
+      256,
+      256
+    ],
+    "critic_hidden": [
+      256,
+      256
+    ],
+    "critic_layernorm": true,
+    "log_std_min": -5.0,
+    "log_std_max": 2.0
+  },
+  "budget": {
+    "online_env_steps": 50000,
+    "eval_every": 5000,
+    "eval_episodes": 3,
+    "final_eval_episodes": 10,
+    "eval_seed_base": 100000
+  },
+  "dagger": {
+    "bc_init_steps": 20000,
+    "n_iterations": 10,
+    "beta0": 0.5,
+    "beta_decay": 0.5,
+    "grad_steps_per_iter": 5000,
+    "retrain_from_scratch": false,
+    "batch_size": 256,
+    "lr": 0.0003,
+    "weight_decay": 0.0
+  },
+  "rlpd": {
+    "offline_ratio": 0.5,
+    "batch_size": 256,
+    "utd": 2,
+    "n_critics": 2,
+    "critic_subset": 2,
+    "gamma": 0.99,
+    "tau": 0.005,
+    "actor_lr": 0.0003,
+    "critic_lr": 0.0003,
+    "alpha_lr": 0.0003,
+    "init_alpha": 0.1,
+    "target_entropy_scale": 0.5,
+    "learning_starts": 1000,
+    "random_steps": 0,
+    "buffer_size": 1000000
+  },
+  "sac": {
+    "offline_ratio": 0.0,
+    "random_steps": 5000,
+    "learning_starts": 5000
+  },
+  "experiment": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "algos": [
+      "dagger",
+      "rlpd"
+    ],
+    "device": "cpu"
+  }
+}

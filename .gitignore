@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+smoke_output/
+pilot_team2/
+data/*.npz
+runs/*/seed_*/model*.pt
+runs/*/seed_*/train.log

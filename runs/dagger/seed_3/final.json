@@ -1,0 +1,204 @@
+{
+  "episodes": [
+    {
+      "seed": 101000,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    },
+    {
+      "seed": 101001,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    },
+    {
+      "seed": 101002,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    },
+    {
+      "seed": 101003,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    },
+    {
+      "seed": 101004,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    },
+    {
+      "seed": 101005,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    },
+    {
+      "seed": 101006,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    },
+    {
+      "seed": 101007,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    },
+    {
+      "seed": 101008,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    },
+    {
+      "seed": 101009,
+      "finished": true,
+      "lap_steps": 588,
+      "progress": 1.0,
+      "return": 77.43946533203139,
+      "steps": 588,
+      "score": 1.608
+    }
+  ],
+  "score": 1.608,
+  "finish_rate": 1.0,
+  "lap_steps_finished": 588.0,
+  "lap_steps_censored": 588.0,
+  "progress": 1.0,
+  "return": 77.4394653320314,
+  "wall_time_s": 678.2630853652954,
+  "env_steps": 50000,
+  "grad_steps": 70000,
+  "expert_errors": 0,
+  "bc_final": {
+    "episodes": [
+      {
+        "seed": 101000,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      },
+      {
+        "seed": 101001,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      },
+      {
+        "seed": 101002,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      },
+      {
+        "seed": 101003,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      },
+      {
+        "seed": 101004,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      },
+      {
+        "seed": 101005,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      },
+      {
+        "seed": 101006,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      },
+      {
+        "seed": 101007,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      },
+      {
+        "seed": 101008,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      },
+      {
+        "seed": 101009,
+        "finished": true,
+        "lap_steps": 584,
+        "progress": 1.0,
+        "return": 77.84277343750011,
+        "steps": 584,
+        "score": 1.6106666666666667
+      }
+    ],
+    "score": 1.6106666666666665,
+    "finish_rate": 1.0,
+    "lap_steps_finished": 584.0,
+    "lap_steps_censored": 584.0,
+    "progress": 1.0,
+    "return": 77.84277343750011
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "episodes": [
+    {
+      "seed": 101000,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    },
+    {
+      "seed": 101001,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    },
+    {
+      "seed": 101002,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    },
+    {
+      "seed": 101003,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    },
+    {
+      "seed": 101004,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    },
+    {
+      "seed": 101005,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    },
+    {
+      "seed": 101006,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    },
+    {
+      "seed": 101007,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    },
+    {
+      "seed": 101008,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    },
+    {
+      "seed": 101009,
+      "finished": false,
+      "lap_steps": null,
+      "progress": 0.006541565485148002,
+      "return": -149.17444086074767,
+      "steps": 1500,
+      "score": 0.006541565485148002
+    }
+  ],
+  "score": 0.006541565485148002,
+  "finish_rate": 0.0,
+  "lap_steps_finished": NaN,
+  "lap_steps_censored": 1500.0,
+  "progress": 0.006541565485148002,
+  "return": -149.17444086074767,
+  "wall_time_s": 2013.1481974124908,
+  "env_steps": 50000,
+  "grad_steps": 90002,
+  "train_episodes": 45
+}

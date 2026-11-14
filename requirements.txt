@@ -1,0 +1,15 @@
+# SuperTuxKart environment (same as osigaud/pystk_project/requirements.txt)
+pysupertuxkart2
+gymnasium
+omegaconf          # used by the expert agents of the teams
+pandas             # imported by pystk_project/src/utils/track_utils.py (team1/4/5 agents)
+plotly
+pyparsing
+pytz
+requests
+numpy
+# this project
+torch              # CPU build is enough
+scipy
+matplotlib
+pyyaml

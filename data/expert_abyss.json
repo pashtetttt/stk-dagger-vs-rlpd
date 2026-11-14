@@ -1,0 +1,197 @@
+{
+  "expert": "team2",
+  "n_transitions": 11858,
+  "episodes": [
+    {
+      "episode": 0,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 1,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 2,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 3,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 4,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 5,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 6,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 7,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 8,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 9,
+      "noisy": false,
+      "finished": true,
+      "lap_steps": 585,
+      "progress": 1.0,
+      "return": 77.82730712890647,
+      "score": 1.6099999999999999
+    },
+    {
+      "episode": 10,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 586,
+      "progress": 1.0,
+      "return": 77.72198486328128,
+      "score": 1.6093333333333333
+    },
+    {
+      "episode": 11,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 586,
+      "progress": 1.0,
+      "return": 77.63127441406255,
+      "score": 1.6093333333333333
+    },
+    {
+      "episode": 12,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 601,
+      "progress": 1.0,
+      "return": 76.21038818359378,
+      "score": 1.5993333333333335
+    },
+    {
+      "episode": 13,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 586,
+      "progress": 1.0,
+      "return": 77.67186279296875,
+      "score": 1.6093333333333333
+    },
+    {
+      "episode": 14,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 659,
+      "progress": 1.0,
+      "return": 70.41875000000006,
+      "score": 1.5606666666666666
+    },
+    {
+      "episode": 15,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 607,
+      "progress": 1.0,
+      "return": 75.6164672851563,
+      "score": 1.5953333333333335
+    },
+    {
+      "episode": 16,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 587,
+      "progress": 1.0,
+      "return": 77.61118164062498,
+      "score": 1.6086666666666667
+    },
+    {
+      "episode": 17,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 590,
+      "progress": 1.0,
+      "return": 77.3016967773438,
+      "score": 1.6066666666666667
+    },
+    {
+      "episode": 18,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 599,
+      "progress": 1.0,
+      "return": 76.3324462890625,
+      "score": 1.6006666666666667
+    },
+    {
+      "episode": 19,
+      "noisy": true,
+      "finished": true,
+      "lap_steps": 607,
+      "progress": 1.0,
+      "return": 75.58984374999997,
+      "score": 1.5953333333333335
+    }
+  ],
+  "feature_dim": 91,
+  "action_keys": [
+    "steer",
+    "acceleration",
+    "brake",
+    "drift",
+    "nitro"
+  ],
+  "track": "abyss",
+  "wall_time_s": 38.029699087142944,
+  "expert_errors": 0
+}

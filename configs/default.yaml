@@ -1,0 +1,105 @@
+# =====================================================================
+# Mini-project 2 — DAgger vs symmetric sampling (RLPD) in SuperTuxKart
+# Every hyper-parameter used by the study lives in this file.
+# A copy is saved next to every run (runs/<algo>/seed_<k>/config.json).
+# =====================================================================
+
+# Path to the `src/` folder of the cloned osigaud/pystk_project repository
+# (relative to this project's root, or absolute). Can be overridden with
+# the PYSTK_SRC environment variable.
+pystk_src: ../pystk_project/src
+
+# Where everything is written (relative to the project root).
+output_dir: .
+
+env:
+  backend: stk            # "stk" (SuperTuxKart) or "mock" (pure-numpy smoke test)
+  track: abyss            # single fixed track, used for training AND evaluation
+  laps: 1
+  max_steps: 1500         # time limit -> truncation (NOT termination)
+  render: false          # open the STK window (only for scripts/watch.py)
+  step_dt: 0.1            # seconds per env step, only used to convert steps -> seconds
+  allow_fire: false       # items are never fired (no opponents), for every policy
+  # automatic rescue for learned policies (the expert keeps its own rescue logic)
+  auto_rescue:
+    enabled: true
+    warmup_steps: 60      # never rescue before this step (countdown + start)
+    speed_threshold: 1.0  # m/s
+    patience: 30          # consecutive slow steps before calling the rescue bird
+
+# Shared observation features (identical for every method)
+features:
+  n_paths: 6              # nearest path segments ahead (start, end, width)
+  n_items: 4              # nearest items (position + one-hot type)
+
+# Shared action space for learned policies: a vector in [-1, 1]^d
+#   steer -> steer, acceleration -> (a+1)/2, binary keys -> a > 0
+action_keys: [steer, acceleration, brake, drift, nitro]
+
+expert:
+  name: best              # team1..team5, or "best" = fastest in benchmark_experts
+  candidates: [team1, team2, team3, team4, team5]
+  path_lookahead: 3
+  benchmark_episodes: 5
+
+dataset:
+  n_episodes: 20          # expert episodes used to build the offline dataset D0
+  noisy_fraction: 0.5     # fraction of episodes executed with exploration noise
+  noise_steer_std: 0.2    # Gaussian noise on executed steer (labels stay clean)
+  noise_accel_std: 0.1
+  noise_binary_flip: 0.05 # probability of flipping each executed binary action
+  seed: 12345
+
+network:
+  hidden: [256, 256]      # actor architecture shared by DAgger and SAC
+  critic_hidden: [256, 256]
+  critic_layernorm: true  # RLPD design choice
+  log_std_min: -5.0
+  log_std_max: 2.0
+
+# Shared training budget
+budget:
+  online_env_steps: 50000 # online interaction budget for every method
+  eval_every: 5000        # env steps between two evaluations
+  eval_episodes: 3        # deterministic episodes per intermediate evaluation
+  final_eval_episodes: 10 # deterministic episodes for the final evaluation
+  eval_seed_base: 100000  # evaluation seeds are shared by all methods/runs
+
+dagger:
+  bc_init_steps: 20000    # gradient steps for iteration 0 (= behaviour cloning on D0)
+  n_iterations: 10        # online_env_steps / n_iterations env steps per iteration
+  beta0: 0.5              # prob. of executing the expert action at iteration 1
+  beta_decay: 0.5         # beta_i = beta0 * beta_decay**(i-1)
+  grad_steps_per_iter: 5000
+  retrain_from_scratch: false
+  batch_size: 256
+  lr: 3.0e-4
+  weight_decay: 0.0
+
+rlpd:
+  offline_ratio: 0.5      # symmetric sampling: 50% offline / 50% online per batch
+  batch_size: 256
+  utd: 2                  # critic updates per env step (RLPD uses up to 20)
+  n_critics: 2            # ensemble size (RLPD default 10)
+  critic_subset: 2        # min over a random subset of this size for the target
+  gamma: 0.99
+  tau: 0.005
+  actor_lr: 3.0e-4
+  critic_lr: 3.0e-4
+  alpha_lr: 3.0e-4
+  init_alpha: 0.1
+  target_entropy_scale: 0.5   # target entropy = -scale * action_dim (RLPD: 0.5)
+  learning_starts: 1000   # online steps before the first update
+  random_steps: 0         # uniform-random actions at the start (0 for RLPD)
+  buffer_size: 1000000
+
+# Control without prior data (optional, enabled in run_all with --with-sac)
+sac:
+  offline_ratio: 0.0
+  random_steps: 5000
+  learning_starts: 5000
+
+experiment:
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  algos: [dagger, rlpd]
+  device: cpu
